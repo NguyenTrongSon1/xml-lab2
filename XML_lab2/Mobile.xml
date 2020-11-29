@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--<!DOCTYPE Mobile SYSTEM "Mobile.dtd">-->
+<!--<Mobile>-->
+<!--    <Company>Nokia</Company>-->
+<!--    <Model Type="Camera">6600</Model>-->
+<!--    <Price>99.9</Price>-->
+<!--    <Accessories> abc</Accessories>-->
+<!--</Mobile>-->
+<!DOCTYPE Mobile [
+        <!ELEMENT Mobile (Company, Model, Price, Accessories)>
+        <!ELEMENT Company (#PCDATA)>
+        <!ELEMENT Model (#PCDATA)>
+        <!ELEMENT Price (#PCDATA)>
+        <!ELEMENT Accessories (#PCDATA)>
+        <!ATTLIST Model Type CDATA "Camera">
+        <!ENTITY HP  "Head Phones">
+        <!ENTITY CH  "Charger">
+        <!ENTITY SK  "Starters Kit">
+        ]>
+<Mobile>
+    <Company>Nokia</Company>
+    <Model Type="Camera">6600</Model>
+    <Price>9999</Price>
+    <Accessories> &HP;, &CH; and a &SK;</Accessories>
+</Mobile>
+

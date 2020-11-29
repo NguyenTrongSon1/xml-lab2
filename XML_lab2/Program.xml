@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Program SYSTEM "Program.dtd">
+<program>
+    <comments>This is a simple Java Program.It will display the message "hello world!" on excution.</comments>
+    <code>
+        public static void main(String[] args)
+        System.out.println("Hello world!");
+
+    </code>
+
+</program>
